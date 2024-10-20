@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/sytles.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+</head>
+<body>
+    <div class="main-content">
+    <div class="container">
+        <h1>Image Classifier</h1>
+        <button onclick="showInstructions();">Instrucciones</button>
+        <input type="file" id="imageInput" accept="image/*" style="display: none;" onchange="displayImage();">
+        <button onclick="classifyImage();">Clasificar imagen</button>
+        <div class="image-container">
+            <img id="img" crossorigin width="300" height="227">
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <div id="result" class="result-container"></div>
+    </div>
+</div>
+
+    <script src="/js/scripts.js"></script>
+</body>
+
+<footer>
+    <p>&copy; 2024 Image Classifier Web App. | Made  by Masror Mako</p>
+</footer>
+
+</html>
